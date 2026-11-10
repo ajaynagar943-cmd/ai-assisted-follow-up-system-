@@ -20,6 +20,29 @@ NumPy
 Scikit-learn
 Git & GitHub
 
+## Project Structure
+
+## Project Structure
+
+
+│   README.md
+│
+├───data
+│   ├───processed
+│   │       accepted_rows.json
+│   │       clean_appointments_pass1.csv
+│   │       rejected_rows.json
+│   │       
+│   └───raw
+│           appointments.csv
+│           clinics.csv
+│           followup_notes.csv
+│           
+└───src
+        Task1.1.py
+        Task1.2.py
+        
+
 ## Project Status
  Initial setup and data exploration phase.
 

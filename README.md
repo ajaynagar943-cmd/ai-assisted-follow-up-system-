@@ -22,3 +22,12 @@ Git & GitHub
 
 ## Project Status
  Initial setup and data exploration phase.
+
+ ## Progress Tracker
+
+- [x] Create repository
+- [x] Upload raw data
+- [x] Setup folder structure
+- [x] Task 1.1
+- [x] Task1.2
+

@@ -50,5 +50,5 @@ file_path2 = (
     / "clean_appointments_pass1.csv"
 
 )
-df.to_csv(file_path2)
+df.to_csv(file_path2,index = False)
 

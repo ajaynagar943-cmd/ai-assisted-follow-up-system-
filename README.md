@@ -24,7 +24,7 @@ Git & GitHub
 
 ## Project Structure
 
-
+``` text
 │   README.md
 │
 ├───data
@@ -42,7 +42,7 @@ Git & GitHub
         Task1.1.py
         Task1.2.py
         
-
+```
 ## Project Status
  Initial setup and data exploration phase.
 

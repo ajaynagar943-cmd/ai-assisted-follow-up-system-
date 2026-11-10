@@ -17,7 +17,7 @@ def parse_row(row):
         case "age": converted_row["age"] = int(row["age"])
         case "fee_inr": converted_row["fee_inr"] = int(row["fee_inr"])
         case "prioe_no_show": converted_row["prior_no_show"] = int(row["prior_no_show"])
-        case "distance_km" : converted_row["istance_km"] = float(row["distance_km"])
+        case "distance_km" : converted_row["distance_km"] = float(row["distance_km"])
         case _ : converted_row[key] = row[key]
    return converted_row
 

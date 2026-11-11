@@ -60,4 +60,6 @@ Git & GitHub
 - [x] Setup folder structure
 - [x] Task 1.1
 - [x] Task1.2
+- [x] Task 1.3
+- [x] Task1.4
 

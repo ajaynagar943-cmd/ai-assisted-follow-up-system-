@@ -41,14 +41,24 @@ df = df.dropna(subset=["status"]).reset_index(drop = True)
 print("No of rows in DataFrame", df.shape[0])
 
 
-#Saving cleaned df to a csv file
+
+#Saving cleaned df 
 
 file_path2 = (
+    Path(__file__).resolve().parent.parent
+    / "data"
+    / "processed"
+    / "clean_appointments_pass1.parquet"
+
+)
+df.to_parquet(file_path2,index = False)
+
+file_path3 = (
     Path(__file__).resolve().parent.parent
     / "data"
     / "processed"
     / "clean_appointments_pass1.csv"
 
 )
-df.to_csv(file_path2,index = False)
+df.to_csv(file_path3,index = False)
 

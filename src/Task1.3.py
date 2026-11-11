@@ -6,10 +6,11 @@ file_path1 = (
     Path(__file__).resolve().parent.parent
     /"data"
     /"processed"
-    /"clean_appointments_pass1.csv"
+    /"clean_appointments_pass1.parquet"
 )
 
-df = pd.read_csv(file_path1)
+df = pd.read_parquet(file_path1)
+
 
 #replacing age <1 or age >100 with NaN
 df["age"] = df["age"].mask(((df["age"]<1 )|(df["age"]>100)), pd.NA)
@@ -52,7 +53,16 @@ file_path2 = (
     Path(__file__).resolve().parent.parent
     / "data"
     / "processed"
+    / "clean_appointments_pass2.parquet"
+
+)
+df.to_parquet(file_path2,index = False)
+
+file_path3 = (
+    Path(__file__).resolve().parent.parent
+    / "data"
+    / "processed"
     / "clean_appointments_pass2.csv"
 
 )
-df.to_csv(file_path2,index = False)
+df.to_csv(file_path3,index = False)

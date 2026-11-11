@@ -25,12 +25,18 @@ Git & GitHub
 ## Project Structure
 
 ``` text
+
 │   README.md
-│
+│   
 ├───data
 │   ├───processed
 │   │       accepted_rows.json
+│   │       clean_appointments.csv
+│   │       clean_appointments.parquet
 │   │       clean_appointments_pass1.csv
+│   │       clean_appointments_pass1.parquet
+│   │       clean_appointments_pass2.csv
+│   │       clean_appointments_pass2.parquet
 │   │       rejected_rows.json
 │   │       
 │   └───raw
@@ -41,7 +47,8 @@ Git & GitHub
 └───src
         Task1.1.py
         Task1.2.py
-        
+        Task1.3.py
+        Task1.4.py
 ```
 ## Project Status
  Initial setup and data exploration phase.

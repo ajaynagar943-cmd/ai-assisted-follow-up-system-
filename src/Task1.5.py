@@ -45,16 +45,7 @@ file_path2 = (
     Path(__file__).resolve().parent.parent
     / "data"
     / "processed"
-    / "clinics_enriched.parquet"
-
-)
-df.to_parquet(file_path2,index = False)
-
-file_path3 = (
-    Path(__file__).resolve().parent.parent
-    / "data"
-    / "processed"
     / "clinics_enriched.csv"
 
 )
-df.to_csv(file_path3,index = False)
+df.to_csv(file_path2,index = False)

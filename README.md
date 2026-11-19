@@ -20,7 +20,6 @@ NumPy
 Scikit-learn
 Git & GitHub
 
-## Project Structure
 
 ## Project Structure
 
@@ -31,12 +30,15 @@ Git & GitHub
 ├───data
 │   ├───processed
 │   │       accepted_rows.json
+│   │       appointments_clean.csv
 │   │       clean_appointments.csv
 │   │       clean_appointments.parquet
 │   │       clean_appointments_pass1.csv
 │   │       clean_appointments_pass1.parquet
 │   │       clean_appointments_pass2.csv
 │   │       clean_appointments_pass2.parquet
+│   │       clinics_enriched.csv
+│   │       load_data.sql
 │   │       rejected_rows.json
 │   │       
 │   └───raw
@@ -49,17 +51,14 @@ Git & GitHub
         Task1.2.py
         Task1.3.py
         Task1.4.py
+        Task1.5.py
+        Task1.6.py
+        
 ```
-## Project Status
+## Highlights
  Initial setup and data exploration phase.
+ - using Path from pathlib to overcome file path issue when running the project on defferent machines.
+ - saving a parquet file to preserve datatypes of the dataframe because csv coverts everything to string.
 
- ## Progress Tracker
 
-- [x] Create repository
-- [x] Upload raw data
-- [x] Setup folder structure
-- [x] Task 1.1
-- [x] Task1.2
-- [x] Task 1.3
-- [x] Task1.4
 

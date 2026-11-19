@@ -77,7 +77,7 @@ with open(file_path4,"w",newline = "") as file:
         f"{appointment.fee_inr},"
         f"'{appointment.booking_channel}',"
         f"'{appointment.visit_type}',"
-        f"{appointment.reminder_sent},"
+        f"'{appointment.reminder_sent}',"
         f"{appointment.prior_no_shows},"
         f"'{appointment.status}',"
         f"{appointment.lead_days},"

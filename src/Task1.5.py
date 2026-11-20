@@ -24,7 +24,8 @@ for clinic in clinic_data:
             response = requests.get("https://api.open-meteo.com/v1/forecast",
             params={"latitude":clinic["latitude"], "longitude":clinic["longitude"],
             "hourly": "temperature_2m", "forecast_days": 1},timeout=10) 
-
+            
+            # Raises exception for 4xx/5xx
             response.raise_for_status()   
 
             data = response.json()

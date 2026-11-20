@@ -47,7 +47,7 @@ file_path4 = (
 
 )
 
-with open(file_path4,"w",newline = "") as file:
+with open(file_path4,"w") as file:
 
     for clinic in clinics.itertuples(index=False):
         clinics_sql = (
